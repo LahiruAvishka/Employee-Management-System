@@ -3,6 +3,7 @@ package org.emo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
 public class Main {
@@ -10,4 +11,7 @@ public class Main {
         SpringApplication.run(Main.class);
 
     }
+
+
+
 }
