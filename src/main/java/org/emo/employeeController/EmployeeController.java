@@ -17,7 +17,7 @@ public class EmployeeController {
         employeeList.add(employee);
 
     }
-    @GetMapping("get-all")
+    @GetMapping("get-alll")
     public List<Employee> getAll(){
        return employeeList;
     }
