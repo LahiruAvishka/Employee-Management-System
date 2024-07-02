@@ -17,4 +17,6 @@ public interface EmployeeService {
     void updareEmployee(Employee employee);
 
     Employee findById(Long id);
+
+    Employee findByFirstName(String firstName);
 }
