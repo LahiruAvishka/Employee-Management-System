@@ -2,11 +2,9 @@ package org.emo.Controller;
 
 import lombok.RequiredArgsConstructor;
 import org.emo.dto.Employee;
-import org.emo.entity.EmployeeEntity;
 import org.emo.service.EmployeeService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -31,5 +29,10 @@ public class EmployeeController {
     public String deleteEmployee(@PathVariable  Long id){
         service.deleteEmployeeById();
         return "Deleted";
+    }
+
+    @PutMapping("/update-employee")
+    public void updateEmployee(@RequestBody Employee employee){
+        service.updareEmployee(employee);
     }
 }
