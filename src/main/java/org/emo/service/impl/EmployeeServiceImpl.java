@@ -26,8 +26,13 @@ public class EmployeeServiceImpl implements EmployeeService {
         repository.save(employeeEntity);
     }
     @Override
-    public List<EmployeeEntity> getAll() {
+    public List<Employee> getAll() {
+        List<Employee> employeeslist = new ArrayList<>();
+        List<EmployeeEntity> allEntityList=repository.findAll();
+        allEntityList.forEach(entity ->{
+            employeeslist.add(new ObjectMapper().convertValue(entity, Employee.class));
+        });
 
-        return repository.findAll();
+        return employeeslist;
     }
 }
