@@ -35,4 +35,17 @@ public class EmployeeServiceImpl implements EmployeeService {
 
         return employeeslist;
     }
+
+    @Override
+    public void deleteEmployeeById() {
+
+    }
+
+    @Override
+    public void deleteEmployeeById(Long id) {
+        if(repository.existsById(id)){
+            repository.deleteById(id);
+        }
+
+    }
 }

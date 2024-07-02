@@ -25,4 +25,11 @@ public class EmployeeController {
     public List<Employee> getAll(){
        return service.getAll();
     }
+
+    @DeleteMapping("delete-emp/{id}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public String deleteEmployee(@PathVariable  Long id){
+        service.deleteEmployeeById();
+        return "Deleted";
+    }
 }
