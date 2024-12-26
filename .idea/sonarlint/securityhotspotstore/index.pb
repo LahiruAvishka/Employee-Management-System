@@ -7,8 +7,6 @@ W
 'src/main/java/org/emo/dto/Employee.java,b\e\be64288d185b9714d66ccabf1b84262a86b6a725
 Å
 Q.idea/sonarlint/securityhotspotstore/b/e/be64288d185b9714d66ccabf1b84262a86b6a725,5\1\5169c106a57022086eb12f178a4aee8b000f3c79
-Å
-Q.idea/sonarlint/securityhotspotstore/3/9/39c30212d37c15d5306bdac338717653802b8cf5,2\d\2d9b7a6ef20576ce946e6d4312faedafe2e02def
 `
 0src/main/java/org/emo/entity/EmployeeEntity.java,f\d\fd0c21cf28aeda5db23c3376ee0b900b9b0f5cb8
 b
