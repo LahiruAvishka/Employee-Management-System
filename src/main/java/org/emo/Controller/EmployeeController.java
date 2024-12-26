@@ -29,7 +29,7 @@ public class EmployeeController {
     @ResponseStatus(HttpStatus.ACCEPTED)
     public String deleteEmployee(@PathVariable  Long id){
         service.deleteEmployeeById();
-        return "Deletedoff";
+        return "Deleted   off";
     }
 
     @PutMapping("/update-employee")
